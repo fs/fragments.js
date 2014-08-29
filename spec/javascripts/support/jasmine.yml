@@ -1,0 +1,39 @@
+# src_files
+#
+# Return an array of filepaths relative to src_dir to include before jasmine specs.
+# Default: []
+#
+# EXAMPLE:
+#
+# src_files:
+#   - lib/source1.js
+#   - lib/source2.js
+#   - dist/**/*.js
+#
+src_files:
+  - public/javascripts/**/*.js
+
+# spec_files
+#
+# Return an array of filepaths relative to spec_dir to include.
+# Default: ["**/*[sS]pec.js"]
+#
+# EXAMPLE:
+#
+# spec_files:
+#   - **/*[sS]pec.js
+#
+spec_files:
+  - '**/*[sS]pec.js'
+
+# spec_helper
+#
+# Ruby file that Jasmine server will require before starting.
+# Returned relative to your root path
+# Default spec/javascripts/support/jasmine_helper.rb
+#
+# EXAMPLE:
+#
+# spec_helper: spec/javascripts/support/jasmine_helper.rb
+#
+spec_helper: spec/javascripts/support/jasmine_helper.rb
