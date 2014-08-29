@@ -6,7 +6,7 @@ letting browser recompile the JavaScript and CSS, it replaces fragments of the c
 with fragments found in the AJAX response.
 
 
-Usage & Example
+Installation
 ===============
 
 Add `fragments.js` gem to your application's Gemfile:
@@ -20,6 +20,9 @@ Require it in `application.js`:
 ```coffeescript
 //= require fragments
 ```
+
+Usage
+===============
 
 Add fragment to the page:
 
@@ -46,7 +49,7 @@ After creating comment respond with fragments:
 def create
   # ...
   @comment.save
-  
+
   render "discussion", comments: @comments, layout: false
 end
 ```
