@@ -24,7 +24,7 @@ src_files:
 #   - **/*[sS]pec.js
 #
 spec_files:
-  - '**/*[sS]pec.js'
+  - '**/*[sS]pec.js.coffee'
 
 # spec_helper
 #
