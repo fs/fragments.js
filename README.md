@@ -75,3 +75,11 @@ $(document).on("fragment:update", ($newContent) ->
   $newContent.find(".acts-as-datatable").dataTable()
 )
 ```
+
+## Credits
+
+Thanks to Arthur Pushkin for his original work on this library.
+
+Fragments.js is maintained by [Vasily Polovnyov](http://github.com/vast).
+It was written by [Flatstack](http://www.flatstack.com) with the help of our
+[contributors](http://github.com/fs/fragments.js/contributors).
