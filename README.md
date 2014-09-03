@@ -1,13 +1,11 @@
-fragments.js
-============
+# fragments.js
 
 fragments.js makes updating HTML page fragments easier. Instead of rendering the whole page and
 letting browser recompile the JavaScript and CSS, it replaces fragments of the current page
 with fragments found in the AJAX response.
 
 
-Installation
-===============
+## Installation
 
 Add `fragments.js` gem to your application's Gemfile:
 
@@ -21,8 +19,7 @@ Require it in `application.js`:
 //= require fragments
 ```
 
-Usage
-===============
+## Usage
 
 Add fragment to the page:
 
@@ -57,8 +54,7 @@ end
 And then element with the corresponding `[data-fragment-id]` will be updated from AJAX response.
 In our particular case discussion (comments list) will be updated.
 
-Integration with JavaScript Libraries
-========================================
+## Integration with JavaScript Libraries
 
 Fragments.js replaces fragment contents with the data from AJAX response.
 That means that nodes on which you binded events on jQuery.ready no longer exist.
