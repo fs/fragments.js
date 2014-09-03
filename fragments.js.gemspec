@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "fragments/version"
+require "fragments.js/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "fragments.js"
-  spec.version       = Fragments::VERSION
+  spec.version       = FragmentsJs::VERSION
   spec.authors       = ["Flatstack"]
   spec.email         = ["support@flatstack.com"]
   spec.summary       = "Update page fragments from AJAX response"
