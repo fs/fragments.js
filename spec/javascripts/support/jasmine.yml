@@ -11,9 +11,9 @@
 #   - dist/**/*.js
 #
 src_files:
-  - public/javascripts/**/*.js
   - __spec__/jquery.js
   - __spec__/jasmine-jquery.js
+  - __spec__/fragments.js
 
 # spec_files
 #
