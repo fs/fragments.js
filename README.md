@@ -78,8 +78,8 @@ $(document).on("fragment:update", ($newContent) ->
 
 ## Credits
 
-Thanks to Arthur Pushkin for his original work on this library.
+Thanks to [Arthur Pushkin](https://github.com/4r2r) for his original work on this library.
 
-Fragments.js is maintained by [Vasily Polovnyov](http://github.com/vast).
+Fragments.js is maintained by [Vasily Polovnyov](https://github.com/vast).
 It was written by [Flatstack](http://www.flatstack.com) with the help of our
-[contributors](http://github.com/fs/fragments.js/contributors).
+[contributors](https://github.com/fs/fragments.js/contributors).
