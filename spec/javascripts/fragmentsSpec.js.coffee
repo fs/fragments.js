@@ -16,7 +16,8 @@ describe "Fragments", ->
 
   describe "on ajax:complete on [data-behavior=fragments]", ->
     beforeEach ->
-      @topLevelFragmentTriggerSpy = spyOn($.fn, "trigger").and.callThrough()
+      @fragmentUpdateTriggerSpy = jasmine.createSpy("trigger")
+      $(document).off("fragment:update").on("fragment:update", @fragmentUpdateTriggerSpy)
       $("#fragments-behavior-source").trigger("ajax:complete", @xhr)
 
     it "updates page fragments with top-level fragments found in response", ->
@@ -26,8 +27,5 @@ describe "Fragments", ->
       expect($.trim($("#nested-fragment").text())).toEqual("For tonight, we dine in hell!")
 
     it "triggers fragment:update event on updated elements", ->
-      expect(@topLevelFragmentTriggerSpy).toHaveBeenCalledWith("fragment:update", [
-        jasmine.any(Object),
-        jasmine.any(Object),
-        @xhr
-      ])
+      expect(@fragmentUpdateTriggerSpy).toHaveBeenCalled()
+      expect(@fragmentUpdateTriggerSpy.calls.count()).toEqual(2)
