@@ -12,6 +12,8 @@
 #
 src_files:
   - public/javascripts/**/*.js
+  - __spec__/jquery.js
+  - __spec__/jasmine-jquery.js
 
 # spec_files
 #

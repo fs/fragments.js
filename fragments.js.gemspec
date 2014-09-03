@@ -23,4 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "jasmine"
   spec.add_development_dependency "coffee-script"
   spec.add_development_dependency "sprockets"
+  spec.add_development_dependency "sprockets-gem-paths"
+  spec.add_development_dependency "jquery-rails"
+  spec.add_development_dependency "jasmine-jquery-rails"
 end
