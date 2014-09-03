@@ -1,6 +1,6 @@
-# fragments.js
+# Fragments.js
 
-fragments.js makes updating HTML page fragments easier. Instead of rendering the whole page and
+Fragments.js makes updating HTML page fragments easier. Instead of rendering the whole page and
 letting browser recompile the JavaScript and CSS, it replaces fragments of the current page
 with fragments found in the AJAX response.
 
