@@ -76,6 +76,53 @@ $(document).on("fragment:update", ($newContent) ->
 )
 ```
 
+## Bonus: highlight updated fragments
+
+Fragments.js allows you to highlight new parts of the updated fragments.
+All you need is to require one more file in `application.js`:
+
+```coffeescript
+//= require fragments/highlight
+```
+
+And styles:
+
+```css
+*= require fragments/highlight
+```
+
+Then set `[data-highlight]` attribute on your fragment and
+add `data-updated-at` attribute to each child element (in our case to each comment block):
+
+```erb
+<div class="discussion" data-fragment-id="discussion" data-highlight>
+  <%= render comments %>
+</div>
+```
+
+`_comment.html.erb`:
+```erb
+<div class="comment" data-updated-at="<%= comment.updated_at.to_i %>">
+  <p><%= comment.body %></p>
+</div>
+```
+
+You even can customize the behaviour by defining you own styles for `.is-updated-fragment` class:
+
+```css
+.is-updated-fragment {
+  animation-name: green;
+  animation-duration: .7s;
+}
+
+@keyframes green {
+  from { background: green; }
+  to   { background: none; }
+}
+```
+
+Do not forget to remove `fragments/highlight` from your `application.css` if have your own styles.
+
 ## Credits
 
 Thanks to [Arthur Pushkin](https://github.com/4r2r) for his original work on this library.
