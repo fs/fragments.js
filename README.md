@@ -70,9 +70,9 @@ $(".acts-as-chosen").chosen()
 $(".acts-as-datatable").dataTable()
 
 $(document).on("fragment:update", (e, $newContent) ->
-  $newContent.find("input[placeholder]").placeholder()
-  $newContent.find(".acts-as-chosen").chosen()
-  $newContent.find(".acts-as-datatable").dataTable()
+  $newContent.findAndFilter("input[placeholder]").placeholder()
+  $newContent.findAndFilter(".acts-as-chosen").chosen()
+  $newContent.findAndFilter(".acts-as-datatable").dataTable()
 )
 ```
 
