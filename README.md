@@ -1,4 +1,4 @@
-# Fragments.js
+# Fragments.js [![Build Status](https://semaphoreapp.com/api/v1/projects/1acda4e5-b3ab-46de-97c6-69d0dd7a9144/261439/shields_badge.svg)](https://semaphoreapp.com/fs/fragments-js)
 
 Fragments.js makes updating HTML page fragments easier. Instead of rendering the whole page and
 letting browser recompile the JavaScript and CSS, it replaces fragments of the current page
