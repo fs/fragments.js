@@ -10,7 +10,7 @@ with fragments found in the AJAX response.
 Add `fragments.js` gem to your application's Gemfile:
 
 ```ruby
-gem "fragments.js", github: "fs/fragments.js"
+gem "fragments.js", git: "https://github.com/fs/fragments.js.git"
 ```
 
 Require it in `application.js`:
