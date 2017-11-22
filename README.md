@@ -23,12 +23,12 @@ Require it in `application.js`:
 
 ### Node
 
-**We highly recommend to use package managers with ability to lock versions of packages: Yarn or NPM >= 5. This required because of this package distribute through GitHub repo and there is no other way to avoid breaking changes.**
-
 Yarn:
 ```sh
-yarn add git@github.com:fs/fragments.js.git
+yarn add https://github.com/fs/fragments.js.git#commit_hash
 ```
+
+**WARNING: replace `commit_hash` with actual commit hash!**
 
 Import inside your application:
 ```js
