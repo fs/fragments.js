@@ -25,10 +25,8 @@ Require it in `application.js`:
 
 Yarn:
 ```sh
-yarn add https://github.com/fs/fragments.js.git#commit_hash
+yarn add fragments.js
 ```
-
-**WARNING: replace `commit_hash` with actual commit hash!**
 
 Import inside your application:
 ```js
