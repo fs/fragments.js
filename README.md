@@ -7,6 +7,8 @@ with fragments found in the AJAX response.
 
 ## Installation
 
+### Gem
+
 Add `fragments.js` gem to your application's Gemfile:
 
 ```ruby
@@ -17,6 +19,22 @@ Require it in `application.js`:
 
 ```coffeescript
 //= require fragments
+```
+
+### Node
+
+Yarn:
+```sh
+yarn add fragments.js
+```
+
+Import inside your application:
+```js
+// CommonJS
+require('fragments.js');
+
+// ES Modules
+import 'fragments.js';
 ```
 
 ## Usage
@@ -79,7 +97,8 @@ $(document).on("fragment:update", (e, $newContent) ->
 ## Bonus: highlight updated fragments
 
 Fragments.js allows you to highlight new parts of the updated fragments.
-All you need is to require one more file in `application.js`:
+
+All you need is to require one more file in `application.js` (if you use it as Gem):
 
 ```coffeescript
 //= require fragments/highlight
@@ -89,6 +108,21 @@ And styles:
 
 ```css
 *= require fragments/highlight
+```
+
+Or if you use it as node module:
+
+```js
+// CommonJS
+require('fragments.js/lib/assets/javascripts/fragments/highlight');
+
+// ES Modules
+import 'fragments.js/lib/assets/javascripts/fragments/highlight';
+```
+
+And styles:
+```scss
+@import '~fragments.js/lib/assets/stylesheets/fragments/highlight.css';
 ```
 
 Then set `[data-highlight]` attribute on your fragment and

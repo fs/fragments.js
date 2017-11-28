@@ -1,0 +1,9 @@
+{
+  "name": "fragments.js",
+  "version": "0.0.1",
+  "description": "Update page fragments from AJAX response",
+  "main": "lib/assets/javascripts/fragments.js",
+  "repository": "git@github.com:fs/fragments.js.git",
+  "author": "Flatstack",
+  "license": "MIT"
+}
